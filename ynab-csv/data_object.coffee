@@ -1,5 +1,5 @@
 # These are the columns that YNAB expects
-ynab_cols = ['Date','Payee','Category','Memo','Outflow','Inflow']
+ynab_cols = ['Date','Payee','Category','Memo','Type','Outflow','Inflow']
 
 # Converts a string value into a number.
 # Filters out all special characters like $ or ,
