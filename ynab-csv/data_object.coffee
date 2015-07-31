@@ -60,16 +60,16 @@ class window.DataObject
               when 'Date' then tmp_row[col] = parseDate(cell)
               when 'Outflow'
                 number = numberfy(cell)
-                if lookup['Outflow'] == lookup['Inflow']
-                  tmp_row[col] = Math.abs(number) if lookup['Type'] == "D"
-                else
+                if lookup['Type'] == "D"
                   tmp_row[col] = number
+                else
+                  tmp_row[col] = ""
               when 'Inflow'
                 number = numberfy(cell)
-                if lookup['Outflow'] == lookup['Inflow']
-                  tmp_row[col] = number if lookup['Type'] == "C"
-                else
+                if lookup['Type'] == "C"
                   tmp_row[col] = number
+                else
+                  tmp_row[col] = ""
               else tmp_row[col] = cell
 
           value.push(tmp_row)
