@@ -65,6 +65,7 @@ angular.element(document).ready ->
       Payee:    'Payee'
       Category: 'Category'
       Memo:     'Memo'
+      Type:     'Type'
       Outflow:  'Amount'
       Inflow:   'Amount'
     $scope.data_object = new DataObject()
