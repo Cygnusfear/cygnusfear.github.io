@@ -58,7 +58,7 @@ angular.element(document).ready ->
   # Application code
   angular.module('app').controller 'ParseController', ($scope) ->
     $scope.angular_loaded = true
-    $scope.ynab_cols = ['Date','Payee','Category','Memo','Outflow','Inflow']
+    $scope.ynab_cols = ['Date','Payee','Category','Memo','Type','Outflow','Inflow']
     $scope.data = {}
     $scope.ynab_map =
       Date:     'Date'
