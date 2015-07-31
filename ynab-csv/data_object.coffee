@@ -60,13 +60,13 @@ class window.DataObject
               when 'Date' then tmp_row[col] = parseDate(cell)
               when 'Outflow'
                 number = numberfy(cell)
-                if lookup['Type'] == "D"
+                if row[lookup['Type']] == "D"
                   tmp_row[col] = number
                 else
                   tmp_row[col] = ""
               when 'Inflow'
                 number = numberfy(cell)
-                if lookup['Type'] == "C"
+                if row[lookup['Type']] == "C"
                   tmp_row[col] = number
                 else
                   tmp_row[col] = ""
